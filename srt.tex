@@ -1,4 +1,5 @@
 \documentclass{report}
+\usepackage[ngerman]{babel}
 \usepackage{tcolorbox}
 \usepackage{amssymb}
 \usepackage{enumitem}
@@ -18,8 +19,6 @@
 	{\huge\bfseries Physik\par}
 	\vspace{2cm}
 	{\Large\itshape Laura Thiel\par}
-
-% Bottom of the page
 	{\large \today\par}
 \end{titlepage}
 \tableofcontents
@@ -41,10 +40,24 @@ In der Ära von Michelson und Morley wurden stetig verbesserte Messapparaturen e
 \sloppy % <-- Add this line
 Überraschenderweise ergab das Experiment jedoch keine Änderung in der Lichtgeschwindigkeit.
 Die Physiker kamen zu dem Ergebnis, dass die Lichtgeschwindigkeit einen konstanten Wert hat: 
-\begin{center}
-    \protect\boldmath $c = \SI{299792458}{\meter\per\second} \approx \SI{300000}{\kilo\meter\per\second}$\unboldmath.
-\end{center}
+$$c = \SI{299792458}{\meter\per\second} \approx \SI{300000}{\kilo\meter\per\second}$$
 Dies bedeutet, dass ein Einstein, der gleichförmig rennt, den gleichen Wert für die Lichtgeschwindigkeit misst wie ein ruhender Einstein. 
 In diesem Kontext ist also nichts relativ; die Lichtgeschwindigkeit ist schlichtweg eine absolute Größe.
+\chapter{Einstein'sche Postulate und Bezugssysteme}
+% \emph{Postulieren, ursprünglich im 15. Jahrhundert als 'unbedingt fordern', später in der Philosophie des 18. Jahrhunderts als 'ein vorläufiges Akzeptieren als wahr' verwendet, stammt vom lateinischen "postulāre" ab, was 'verlangen, begehren, erwarten, fordern' bedeutet. In der Philosophie bezieht sich ein Postulat auf eine unbedingte Forderung oder eine vorläufig angenommene These, die möglicherweise noch nicht bewiesen werden kann. Der Begriff "Postulat" selbst stammt vom lateinischen "postulātum" ab, was 'Forderung, gerichtlicher Antrag, Gesuch' bedeutet.}
 
+Einstein legte lediglich zwei grundlegende Annahmen oder Postulate fest, um seine wegweisende Theorie der Speziellen Relativitätstheorie zu entwickeln. Bereits kennengelernt haben wir die Konstanz der Lichtgeschwindigkeit (c), die experimentell nie widerlegt wurde und ein fundamentaler Bestandteil der Theorie ist. 
+Im nächsten Abschnitt werden wir uns mit dem zweiten Postulat beschäftigen, dem sogenannten Relativitätsprinzip.
+\section{Bezugssysteme und Inertialsysteme}
+Das mechanische \textbf{Relativitätsprinzip} geht schon auf \textbf{Galilei} und \textbf{Newton} zurück. In den folgenden Unterkapiteln geht es nun um das 'Relative' in der Speziellen Relativitätstheorie (ab hier SRT genannt).
+\subsection{Situation 1}
+Einstein und Newton bewegen sich in ihren Zügen mit jeweils einer Geschwindigkeit von \(v_{\text{Newton}} = v_{\text{Einstein}} = 47 \, \text{km/h}\). Dadurch bewegen sich die beiden relativ zueinander mit einer Geschwindigkeit von \(v_{\text{relativ}} = 0 \, \text{km/h}\).
+Angenommen, Newton führt auf seinem gleichförmig bewegten Zug einen Versuch durch, beispielsweise das Fallenlassen eines Apfels, so würde Einstein dies genauso wahrnehmen wie Newton. Diese Situation wäre gleich, selbst wenn beide Wissenschaftler in einem Labor stehen würden.
+\subsection{Situation 2}
+Im zweiten Szenario würde Einstein in seinem Zug eine Relativgeschwindigkeit von \(v_{\text{relativ}} = 65 \, \text{km/h} - 47 \, \text{km/h} = 18 \, \text{km/h}\) in Bezug auf Newton messen. Wenn Einstein nun einen Apfel fallen lässt, würde dieser aus seiner Perspektive senkrecht nach unten fallen, während Newton eine Wurfparabel sehen würde, da sich der Apfel aus seiner Perspektive zusätzlich mit \(v_{\text{relativ}}\) nach vorne bewegt.
+Wenn dieser Versuch von Einstein in einem ruhenden Labor durchgeführt wird, müsste Newton mit \(v_{\text{relativ}} = 18 \, \text{km/h}\) daran vorbeijoggen, um dieselbe Beobachtung zu machen.
+\subsection{Relativitätsprinzip}
+Das führt uns zum zweiten Postulat, dem Relativitätsprinzip. In unbeschleunigten Bezugssystemen sollen alle physikalischen Gesetze gleich sein. Galileo Galilei erkannte dies bereits 1638 im Inneren eines ruhigen Schiffes.
+In beschleunigten Bezugssystemen variieren die Gesetze aufgrund von Scheinkräften, wie beim Anfahren eines Autos. Im Gegensatz dazu fallen Objekte in unbeschleunigten Bezugssystemen, wie einem gleichförmig fahrenden Zug, senkrecht nach unten. Solche Systeme werden als Inertialsysteme bezeichnet, in denen die physikalischen Gesetze einheitlich gelten, ohne einen absoluten Ruhepunkt.
+\section{Lichtuhr}
 \end{document}
